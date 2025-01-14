@@ -236,3 +236,42 @@ class CuentaBancaria {
         console.log("Abriendo " + this.puertas + " puertas.");
     }
   }
+
+  /*### 13. Genéricos
+
+**Descripción**: Crea una función genérica llamada `revertirArray` que reciba un array de cualquier tipo y devuelva un nuevo array con los elementos en orden inverso.
+
+**Requerimientos**:
+- La función debe llamarse `revertirArray`.
+- Debe aceptar un parámetro genérico `T` que sea un array de cualquier tipo.
+- Debe devolver un nuevo array con los elementos en orden inverso.
+- Prueba la función con un array de números y otro de cadenas.*/
+
+function revertirArray(T){
+    return T.reverse();
+}
+
+let numeros = [1,2,3,4,5,6,7,8,9];
+let cadenas = ["Hola", "Esto", "Son", "Cadenas", "En", "TS"];
+
+console.log(revertirArray(numeros));
+console.log(revertirArray(cadenas));
+
+
+/*### 14. Tuplas
+
+**Descripción**: Usa una tupla para representar coordenadas en un espacio bidimensional y escribe una función que las imprima.
+
+**Requerimientos**:
+- Declara una tupla llamada `coordenadas` que contenga dos números (x, y).
+- Crea una función llamada `imprimirCoordenadas` que acepte una tupla como argumento y muestre su contenido en el formato `(x, y)`.
+- Prueba la función con diferentes valores.*/
+
+let coordenadas: [number, number];
+
+function imprimirCoordenadas(tupla){
+    return coordenadas[0] & coordenadas[1];
+}
+
+let coordenadas1: [number, number] = [10, 20];
+console.log(imprimirCoordenadas(coordenadas1));
